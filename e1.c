@@ -7,7 +7,7 @@ int binary_search(int array[], int size, int target) {
         int mid = (left + right) / 2;
 
         if (array[mid] == target) {
-            return mid; 
+            return mid;
         } else if (array[mid] < target) {
             left = mid + 1;
         } else {
@@ -18,16 +18,16 @@ int binary_search(int array[], int size, int target) {
 }
 
 int main() {
-    int sorted_list[] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+    int arr[] = {1,3,5,6,9,14};
     int target = 14;
-    int size = sizeof(sorted_list) / sizeof(sorted_list[0]);
+    int size = sizeof(arr) / sizeof(arr[0]);
 
-    int result = binary_search(sorted_list, size, target);
+    int result = binary_search(arr, size, target);
 
     if (result != -1) {
-        printf("Element %d found at index %d.\n", target, result);
+        printf("Element %d found at index %d.", target, result);
     } else {
-        printf("Element %d not found.\n", target);
+        printf("Element %d not found.", target);
     }
 
     return 0;
