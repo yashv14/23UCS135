@@ -37,7 +37,6 @@ int main() {
         printf("%d ", num[i]);
     }
     printf("\n");
-
     quick_sort(num, 0, size - 1);
 
     printf("Sorted array: ");
@@ -45,6 +44,5 @@ int main() {
         printf("%d ", num[i]);
     }
     printf("\n");
-
     return 0;
 }
