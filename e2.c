@@ -28,8 +28,8 @@ int main() {
     int min = find_min(num, size);
     int max = find_max(num, size);
 
-    printf("Minimum: %d\n", min);
-    printf("Maximum: %d\n", max);
+    printf("Minimum Number is : %d\n", min);
+    printf("Maximum Number is : %d\n", max);
 
     return 0;
 }
